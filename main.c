@@ -73,7 +73,8 @@ void displayHeader()
     printf("=============================\n");
 }
 
-char* randomWord() {
+char* randomWord() 
+{
     FILE *data = fopen("words.txt", "r");
     if (!data) printf("File not opened!\n");
 
@@ -164,7 +165,7 @@ void printMan(int wrong)
 
 }
 
-int start() {
+int game() {
     char* word = randomWord();
     char currGuess[20]="";
     int wrong = 0;
@@ -236,9 +237,10 @@ int showMenu()
 }
 
 int task(int n) {
-    switch (n) {
+    switch (n) 
+    {
         case 1:
-            start();
+            game();
             break;
         case 2:
             getHighScore();
@@ -252,8 +254,9 @@ int task(int n) {
     return 0;
 }
 
-int main() {
-    int n = 10;
+int main() 
+{
+    int n = 0;
     while (n != 3)
     {
         displayHeader();
