@@ -68,9 +68,9 @@ void printScore(int wrong, const char* word)
 
 void displayHeader() 
 {
-    printf("\n=============================\n");
-    printf("     Hangman by Jeremy\n");
-    printf("=============================\n");
+    printf("-----------------------------\n");
+    printf("|          Hangman          |\n");
+    printf("-----------------------------\n");
 }
 
 char* randomWord() 
@@ -177,7 +177,7 @@ int game() {
 
     printf("\n");
     printf("***************************************\n");
-    printf("* Welcome to HANGMAN! Guess the word! *\n");
+    printf("* Welcome to Hangman! Guess the word! *\n");
     printf("***************************************\n");
     printf("\n");
 
