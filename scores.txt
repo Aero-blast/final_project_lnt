@@ -34,3 +34,5 @@
 6 wrongs while guessing cheetah,
 6 wrongs while guessing tailor,.
 6 wrongs while guessing driver
+2 wrongs while guessing dancer
+5 wrongs while guessing dachshund

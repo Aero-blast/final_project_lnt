@@ -53,7 +53,7 @@ void getHighScore()
 
     for (int i = 0; i < 10 && i < count; i++) 
     {
-        printf("%s: %i wrong guesses.\n", data[i].word, data[i].wrongs);
+        printf("%-10s: %i wrong guesses.\n", data[i].word, data[i].wrongs);
     }
 }
 
@@ -200,10 +200,12 @@ int start() {
             scanf(" %c", &guess);
             char temp[2] = {guess, '\0'}; 
             dupe = checkDupe(guess,guessed);
-            strcat(guessed,temp);  
-        } while (dupe==1);
+            if (!dupe)strcat(guessed,temp);  
+        } while (dupe);
+
         int check = findWord(guess, word, currGuess);
         if (check == 0) wrong++;
+        
         printMan(wrong);
     }
 
