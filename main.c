@@ -59,7 +59,7 @@ void getHighScore()
 
 void printScore(int wrong, const char* word) 
 {
-    FILE *scores = fopen("scores.txt", "a");
+    FILE *scores = fopen("scores.txt", "w");
     if (!scores) printf("File not opened!\n");
 
     fprintf(scores, "%i wrongs while guessing %s\n", wrong, word);
